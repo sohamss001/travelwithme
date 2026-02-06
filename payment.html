@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Soham Tours And Travels | Payment</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* ===== CLASSICAL BASE STYLE ===== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Georgia", "Times New Roman", serif;
+  background: linear-gradient(135deg, #1b1b1b, #2a2a2a);
+  color: #f1f1f1;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== PAYMENT CONTAINER ===== */
+.payment-box {
+  width: 450px;
+  background: #121212;
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid #444;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+}
+
+/* ===== TITLE ===== */
+.payment-box h1 {
+  text-align: center;
+  color: #d4af37;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.payment-box h2 {
+  text-align: center;
+  font-size: 14px;
+  color: #c9c9c9;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+
+/* ===== FORM GROUP ===== */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #e0e0e0;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 11px;
+  background: #1e1e1e;
+  border: 1px solid #555;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 6px rgba(212,175,55,0.5);
+}
+
+/* ===== PAYMENT METHODS ===== */
+.payment-methods {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.payment-methods label {
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.payment-methods input {
+  margin-right: 6px;
+}
+
+/* ===== AMOUNT ===== */
+.amount {
+  text-align: center;
+  margin: 25px 0;
+  font-size: 18px;
+  color: #d4af37;
+  letter-spacing: 1px;
+}
+
+/* ===== SUBMIT BUTTON ===== */
+.pay-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #d4af37, #b8962e);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #111;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pay-btn:hover {
+  background: linear-gradient(90deg, #e6c75a, #caa437);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(212,175,55,0.5);
+}
+
+/* ===== FOOTER NOTE ===== */
+.secure-note {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 12px;
+  color: #aaa;
+}
+</style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="registration.html">Registration Form</a></li>
+            <li><a href="payment.html">Payment</a></li>
+        </ul>
+    </nav>
+<div class="payment-box">
+  <h1>Soham Tours & Travels</h1>
+  <h2>Secure Payment Process</h2>
+
+  <form>
+    <div class="form-group">
+      <label>Cardholder Name</label>
+      <input type="text" placeholder="Enter cardholder name" required>
+    </div>
+
+    <div class="form-group">
+      <label>Card Number</label>
+      <input type="text" placeholder="XXXX XXXX XXXX XXXX" required>
+    </div>
+
+    <div class="form-group">
+      <label>Expiry Date</label>
+      <input type="month" required>
+    </div>
+
+    <div class="form-group">
+      <label>CVV</label>
+      <input type="password" placeholder="***" required>
+    </div>
+
+    <div class="payment-methods">
+      <label><input type="radio" name="pay" checked> Credit Card</label>
+      <label><input type="radio" name="pay"> Debit Card</label>
+      <label><input type="radio" name="pay"> UPI</label>
+    </div>
+
+    <div class="amount">
+      Total Amount: ₹25,000
+    </div>
+
+    <button class="pay-btn">Submit Payment</button>
+  </form>
+
+  <div class="secure-note">
+    🔒 100% Secure Payment | Trusted by Soham Tours And Travels
+  </div>
+</div>
+
+</body>
+</html>

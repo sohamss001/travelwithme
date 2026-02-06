@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Soham Tours And Travels | Home</title>
+
+<style>
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  background: #0b0f14;
+  color: #f1f1f1;
+}
+
+/* ===== NAVBAR ===== */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(11, 15, 20, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 15px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: #4da3ff;
+}
+
+nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #ddd;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #4da3ff;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee")
+              center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 52px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-content span {
+  color: #4da3ff;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+.hero-content button {
+  padding: 15px 35px;
+  background: linear-gradient(90deg, #4da3ff, #2d8cff);
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-content button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(77,163,255,0.5);
+}
+
+/* ===== SECTION ===== */
+section {
+  padding: 80px 60px;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+section h2 span {
+  color: #4da3ff;
+}
+
+/* ===== DESTINATIONS ===== */
+.destinations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #121926;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 15px;
+  color: #4da3ff;
+}
+
+.card p {
+  padding: 0 15px 20px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* ===== WHY CHOOSE US ===== */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+.feature-box {
+  background: #121926;
+  padding: 30px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.feature-box:hover {
+  transform: scale(1.05);
+}
+
+.feature-box h3 {
+  color: #4da3ff;
+  margin-bottom: 10px;
+}
+
+/* ===== CTA ===== */
+.cta {
+  background: linear-gradient(90deg, #4da3ff, #2d8cff);
+  padding: 60px;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.cta button {
+  padding: 15px 40px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background: #fff;
+  color: #2d8cff;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #080b10;
+  padding: 25px;
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Soham Tours & Travels</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="contact.html">Contact</a>
+    <a href="registration.html">Register</a>
+    <a href="payment.html">Payment </a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="hero-content">
+    <h1>Explore The World With <span>Soham Tours</span></h1>
+    <p>Your journey begins here. Discover breathtaking destinations, luxury travel, and unforgettable experiences.</p>
+    <button>Book Your Trip</button>
+  </div>
+</div>
+
+<section>
+  <h2>Popular <span>Destinations</span></h2>
+  <div class="destinations">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+      <h3>Goa</h3>
+      <p>Sun, sand, and unforgettable beach vibes.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+      <h3>Manali</h3>
+      <p>Snowy mountains and peaceful nature.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c">
+      <h3>Dubai</h3>
+      <p>Luxury, skyscrapers, and desert adventures.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Why Choose <span>Us</span></h2>
+  <div class="features">
+    <div class="feature-box">
+      <h3>✔ Trusted Service</h3>
+      <p>Years of experience in travel planning.</p>
+    </div>
+    <div class="feature-box">
+      <h3>✔ Best Prices</h3>
+      <p>Affordable and transparent packages.</p>
+    </div>
+    <div class="feature-box">
+      <h3>✔ 24/7 Support</h3>
+      <p>We are always here for you.</p>
+    </div>
+  </div>
+</section>
+
+<div class="cta">
+  <h2>Ready For Your Next Adventure?</h2>
+  <button>Register Now</button>
+</div>
+
+<footer>
+  © 2026 Soham Tours And Travels | All Rights Reserved
+</footer>
+
+</body>
+</html>

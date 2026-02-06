@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Soham Tours And Travels</title>
+    
+    <style>
+   
+        body {
+            background-color: cyan;
+            color: black;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: white;
+            padding: 15px;
+            border: 2px solid black;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: black;
+            color: cyan;
+            border-radius: 5px;
+        }
+
+
+        .container {
+            border: 3px solid black;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.7); 
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid black;
+            padding-bottom: 10px;
+        }
+
+       
+        .contact-form {
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 2px solid black;
+            background-color: white;
+            box-sizing: border-box; 
+        }
+
+        .submit-btn {
+            background-color: black;
+            color: cyan;
+            padding: 12px 25px;
+            border: 2px solid black;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
+
+        .submit-btn:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .contact-details {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-details li {
+            padding: 5px 0;
+            border-bottom: 1px dashed black;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="registration.html">Registration Form</a></li>
+            <li><a href="payment.html">Payment</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Contact Soham Tours</h1>
+        <p>Ready for your next adventure? Fill out the form below!</p>
+        
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
